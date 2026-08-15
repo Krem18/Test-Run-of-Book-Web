@@ -1,0 +1,119 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.shelf{
+    height: 89.7vh;
+    width: 70vw;
+    background: #512e0e;
+    border-bottom: 12px solid #3d2311;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    perspective: 1000px;
+    display: flex;
+    justify-content: start;
+    border: 30px solid #180c03;
+    gap: 2em;
+    padding: 10px;
+}
+
+
+
+
+.card{
+    width: 350px;   
+    box-shadow: -8px 12px 20px rgba(0, 0, 0, 0.059);
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(251, 249, 249, 0.132);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.card2{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    font-family: 'Georgia', 'Garamond', serif;
+}
+
+.card:hover{
+    transform: translateY(-10px) rotateY(-6deg);  
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.formcard{
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #512e0e;
+    border: 20px solid #180c03;
+    perspective: 1000px;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.BookDesc{
+    overflow: auto;
+    scrollbar-width:none;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+.BookThumb {
+  width: 180px;            
+  height: auto;
+  border-radius: 4px 8px 8px 4px; 
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); 
+}
+
+.BookInput {
+  background-color: #fdf6e3; 
+  border: 2px solid #5c3a1e;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-family: Georgia, serif;
+  color: #2c1a0e;
+  outline: none;
+}
+
+.SubmitBtn {
+  background: linear-gradient(135deg, #c99e32, #8e6b18); 
+  color: #fff;
+  border: 1px solid #5c3a1e;
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.SubmitBtn:hover {
+  filter: brightness(1.1); 
+}
+
+.BookName, .Author, .BookDesc {
+  font-family: 'Georgia', 'Garamond', serif;
+  color: #fdf6e3; 
+}
+
+.BookName {
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+}
+
+.ErrorDisplay{
+    position: absolute;
+    top: 30%;
+    font-size: 4.5rem;
+    font-family: 'Georgia', 'Garamond', serif;
+    
+}
